@@ -1,0 +1,252 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+a {
+  color: #fff;
+  text-decoration: none;
+  transition: 0.3s;
+  font-family: 'Hammersmith One', sans-serif;
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.logo {
+  font-size: 24px;
+  text-transform: uppercase;
+  letter-spacing: 4px;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  font-family: system-ui, -apple-system, Helvetica, Arial, sans-serif;
+  background: #2FB5F5;
+  height: 8vh;
+}
+
+main {
+  background: url("bg.jpg") no-repeat center center;
+  background-size: cover;
+  height: 92vh;
+}
+
+.nav-list {
+  list-style: none;
+  display: flex;
+  z-index: 1;
+}
+
+.nav-list li {
+  letter-spacing: 3px;
+  margin-left: 32px;
+}
+
+.mobile-menu {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  left: 50px;
+}
+
+.mobile-menu div {
+  width: 32px;
+  height: 2px;
+  background: #fff;
+  margin: 8px;
+  transition: 0.3s;
+}
+
+@media (max-width: 999px) {
+  body {
+    overflow-x: hidden;
+  }
+  .nav-list {
+    position: absolute;
+    top: 8vh;
+    right: 0;
+    width: 50vw;
+    height: 92vh;
+    background: #2FB5F5;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in;
+  }
+  .nav-list li {
+    margin-left: 0;
+    opacity: 0;
+  }
+  .mobile-menu {
+    display: block;
+  }
+}
+
+.nav-list.active {
+  transform: translateX(0);
+}
+
+@keyframes navLinkFade {
+  from {
+    opacity: 0;
+    transform: translateX(50px);
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0);
+  }
+}
+
+.mobile-menu.active .line1 {
+  transform: rotate(-45deg) translate(-8px, 8px);
+}
+
+.mobile-menu.active .line2 {
+  opacity: 0;
+}
+
+.mobile-menu.active .line3 {
+  transform: rotate(45deg) translate(-5px, -7px);
+}
+
+.gs{
+    position: relative;
+    top: 40px;
+}
+
+.historico { 
+  border: 1px solid #c0d1e4;
+  border-radius: 13px; 
+  border-spacing: 0;
+  position: relative;
+  top: 50px;
+
+  }
+.historico{ 
+position: relative;
+top: 120px;
+border-bottom: 1px solid #c0d1e4;
+padding: 10px; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+width: 280px;
+left: 45px;
+height: 75px;
+}
+
+.pesquisa {
+  text-align: center; 
+  margin-top: 20px;
+  position: relative;
+  top: 70px;
+}
+
+.historicoCompras {
+ align-items: center;
+}
+
+.pesquisa2 {
+  font-family: 'Inter', sans-serif;
+  padding-right: 20px;
+  position: relative;
+  display: inline-block; 
+  background-size: 30px;
+  background-repeat: no-repeat;
+  width: 80%; 
+  outline: 1px solid #007bff; 
+  border-radius: 8px;
+}
+
+.pesquisa2 input {
+  border: none; 
+  padding: 8px; 
+  width: calc(100% - 32px); 
+  box-sizing: border-box; 
+}
+
+h1 {
+  font-family: 'Inter', sans-serif;
+  font-size: 28px; 
+  text-align: center; 
+  margin-top: 8px; 
+}
+
+.p1 {
+position: relative;
+bottom: 25px;
+font-family: 'Inter-bold', sans-serif;
+font-size: 21px;
+left: 15px;
+}
+#checkmark{
+ width: 30px;
+position: relative;
+bottom: 10px;
+left: 255px;
+height: 25px;
+}
+.valor1{
+    position: relative;
+bottom: 20px;
+font-family: 'Inter-bold', sans-serif;
+font-size: 23px;
+left: 70px;
+}
+.dt{
+    position: relative;
+bottom: 20px;
+font-family: 'Inter-bold', sans-serif;
+font-size: 18px;
+left: 178px;
+}
+.lupinha{
+    width: 25px;
+    height: 25px;
+    position: relative;
+    cursor: pointer;
+    top: 5px;
+}
+.historico2{ 
+position: relative;
+top: 160px;
+border-bottom: 1px solid #c0d1e4;
+padding: 10px; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+width: 280px;
+left: 45px;
+height: 75px;
+border: 1px solid #c0d1e4;
+border-radius: 13px; 
+border-spacing: 0;
+}
+.historico3{ 
+position: relative;
+top: 200px;
+border-bottom: 1px solid #c0d1e4;
+padding: 10px; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+width: 280px;
+left: 45px;
+height: 75px;
+border: 1px solid #c0d1e4;
+border-radius: 13px; 
+border-spacing: 0;
+}
+.historico4{ 
+position: relative;
+top: 240px;
+border-bottom: 1px solid #c0d1e4;
+padding: 10px; 
+box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+width: 280px;
+left: 45px;
+height: 75px;
+border: 1px solid #c0d1e4;
+border-radius: 13px; 
+border-spacing: 0;
+}
