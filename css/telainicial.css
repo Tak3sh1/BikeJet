@@ -1,0 +1,154 @@
+@import url('https://fonts.googleapis.com/css2?family=Hammersmith+One&display=swap');
+
+body {
+  font-family: 'Hammersmith One', sans-serif;
+  margin: 0;
+  padding: 0;
+  height: 900px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+  position: relative; 
+
+  background: url('https://images.pexels.com/photos/6477732/pexels-photo-6477732.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1') no-repeat;
+  background-size: cover; 
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background: inherit;
+    z-index: -1; 
+    opacity: 2;
+    filter: blur(5px); 
+  }
+}
+
+.circle{
+    background-color: #12303b;
+    width: 100%;  
+    height: 300px;
+    border-radius: 0px 0px 190px 190px;
+    position: relative;
+    bottom: 300px;
+}
+.bike2{
+    width: 150px;
+    height: 150px;
+    position: relative;
+    left: 124px;
+    top: 50px;
+}
+.biketesto{
+    font-family: 'Inter', sans-serif;
+    position: relative;
+    top: 40px;
+    left: 120px;
+    letter-spacing: 4px;
+    color: white;
+}
+.biketezto{
+    font-family: 'Hammersmith One', sans-serif;
+    position: relative;
+    top: -20px;
+    left: 205px;
+    letter-spacing: 4px;
+    color: #2FB5F5;
+}
+.t2 {
+    font-family: 'Hammersmith One', sans-serif;
+    position: relative;
+    top: 7rem;
+    left: 4.5rem;
+    font-size: 28px;
+    text-align: left;
+    color: #FFFFFF;
+    justify-content: center;
+}
+
+.t3 {
+    font-family: 'Hammersmith One', sans-serif;
+    position: relative;
+    top: 2.2rem;
+    left: 7rem;
+    font-size: 48px;
+    text-align: left;
+    color: #57c5f8;
+    justify-content: center;
+}
+
+.t4 {
+    font-family: 'Inter', sans-serif;
+    text-decoration: none;
+    position: relative;
+    outline: none;
+    top: 4rem;
+    left: 4.5rem;
+    font-size: 12px;
+    text-align: left;
+    color: #daf3ff;
+    justify-content: center;
+}
+
+
+.login-btn, .paddi {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #57c5f8;
+    color: white;
+    padding: 10px 95px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+    top: -2rem;
+    left: 70px;
+}
+
+.cadastrarbtn {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #57c5f8;
+    color: white;
+    padding: 10px 75px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+    top: 6rem;
+    left: 70px;
+}
+
+.cadastrarbtn:hover {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #dff5ff;
+    color: rgb(77, 77, 77);
+    padding: 10px 75px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+    top: 6rem;
+    left: 70px;
+    transition: ease-in 0.5s;
+}
+
+.login-btn, .paddi:hover {
+    font-family: 'Hammersmith One', sans-serif;
+    background-color: #d2f1ff;
+    color: rgb(73, 73, 73);
+    padding: 10px 95px;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    font-size: 22px;
+    position: relative;
+    top: -2rem;
+    left: 70px;
+    transition: ease-in 0.5s;
+}
