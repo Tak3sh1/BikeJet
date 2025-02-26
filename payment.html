@@ -1,0 +1,79 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="Content-Security-Policy" content="default-src * data: gap: https://ssl.gstatic.com; style-src * 'unsafe-inline'; script-src * 'unsafe-inline' 'unsafe-eval'">
+    <link rel="stylesheet" href="components/loader.css">
+    <script src="components/loader.js"></script>
+    <link rel="stylesheet" href="css/payment.css">
+
+</head>
+<header>
+      <nav>
+        <a class="logo" onclick="principal()">Bike Jet</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Menu pricipal</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="historico.html">Histórico</a></li>
+          <li><a href="payment.html">Pagamento</a></li>
+          <li><a href="gorjeta.html">Gorjeta</a></li>
+
+        </ul>
+      </nav>
+    </header>
+         <script src="mobile-navbar.js"></script>
+</head>
+<body>
+
+    <h2> Formas de Pagamento</h2>
+    <img src="img/bancos.png"/ class="bancos">
+
+    <input id="checkbox_toggle" type="checkbox" class="check">
+<div class="checkbox">
+  <label class="slide" for="checkbox_toggle">
+    <label class="toggle" for="checkbox_toggle"></label>
+    <label class="text" for="checkbox_toggle">Débito</label>
+    <label class="text" for="checkbox_toggle">Crédito</label>
+  </label>
+</div>
+
+<select name="select" class="select" > 
+ <option value="selecionar" >Selecionar banco</option>
+  <option value="nubank">Nubank</option>
+  <option value="bra">Banco Do Brasil</option>
+  <option value="santander">Santander</option>
+</select>
+
+<br>
+<br>
+
+ <h4>Agência</h4>
+<div class="input-group"> 
+  <input required="" class="input"> 
+</div>
+<br>
+ <h4>Conta</h4>
+<div class="input-group"> 
+  <input required="" class="input"> 
+</div>
+<br>
+ <h4>Dígito</h4>
+<div class="input-group"> 
+  <input required="" class="input"> 
+</div>
+
+
+ <center>
+    <a href="pagaprov.html"><button type="submit" class="login-btn paddi" id="log" name="loga">Concluir</button>
+</center>
+
+
+
+</body>
+</html>

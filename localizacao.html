@@ -1,0 +1,64 @@
+<!doctype html>
+<html lang="pt-br">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.3.1/dist/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+        <link rel="stylesheet" href="css/localizacao.css">
+            <script src="components/loader.js"></script>
+            <script src="code.js"></script>]
+            <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB41odu8qWOZq1lLZsCwQwOYA2PstLWII4&callback=initMap"></script>
+    <title> Loc </title>
+
+    <style>
+        #map{
+            top: 2rem;
+            left: 10px;
+        }
+    </style>
+
+  </head>
+  <body onload="getMapLocation(); watchMapPosition();">
+        <header>
+      <nav>
+        <a class="logo" href="index.html">Bike Jet</a>
+        <div class="mobile-menu">
+          <div class="line1"></div>
+          <div class="line2"></div>
+          <div class="line3"></div>
+        </div>
+        <ul class="nav-list">
+          <li><a href="#">Menu pricipal</a></li>
+          <li><a href="localizacao.html">Localização</a></li>
+          <li><a href="historico.html">Histórico</a></li>
+          <li><a href="payment.html">Pagamento</a></li>
+          <li><a href="gorjeta.html">Gorjeta</a></li>
+
+        </ul>
+      </nav>
+    </header>
+    <script src="mobile-navbar.js"></script>
+
+<center>
+<h1 class="h1">Localização</h1>
+</center>
+<p class="p">  Embarque da entrega </p>
+<label for="caixaTexto"></label>
+  <input type="text" id="embarque" name="caixaTexto">
+  <p class="p2">  Desembarque da entrega</p>
+  <label for="caixaTexto"></label>
+  <input type="text" id="desembarque" name="caixaTexto">
+    <div id="map" style="height: 300px; width: 350px;"></div>
+    <script src="script.js"></script>
+    <center>
+      <p id="resultado" class="p3">Você está à 6,1 km do ponto de entrega <br> Acréscimo: R$ 00,00</p>
+    </center>
+    <center>
+    <a href="gorjeta.html"><button type="submit" class="login-btn paddi" id="log" onclick="solicitarEntrega()" name="loga" >Avançar </button>
+</center>
+  </body>
+</html> 
+
+
+
+
